@@ -4,8 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 stations = pd.read_csv("Data/data_small/stations.txt", skiprows=17)
-stations = stations[["STAID", "STANAME       "
-                              "                            "]]
+stations = stations[["STAID", "STANAME                                 "]]
 
 @app.route("/")
 def home():
